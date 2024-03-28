@@ -50,7 +50,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #6C7293;
-    background-color: #000;
+    background-color: #ffffff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
@@ -2230,14 +2230,14 @@ progress {
 .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
+    padding: .300rem .50rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #6C7293;
-    background-color: #000;
+    background-color: #dcebc2;
     background-clip: padding-box;
-    border: 1px solid #000;
+    border: 1px solid #026c17;
     appearance: none;
     border-radius: 5px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
@@ -2259,10 +2259,10 @@ progress {
 
 .form-control:focus {
     color: #6C7293;
-    background-color: #000;
+    background-color: #dcebc2;
     border-color: #f58b8b;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(235, 22, 22, 0.25)
+    box-shadow: 0 0 0 .25rem rgba(8, 118, 0, 0.25)
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2426,7 +2426,7 @@ textarea.form-control-lg {
     font-weight: 400;
     line-height: 1.5;
     color: #6C7293;
-    background-color: #000;
+    background-color: #dcebc2;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right .75rem center;
@@ -2437,9 +2437,9 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-    border-color: #f58b8b;
+    border-color: #006411;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(235, 22, 22, 0.25)
+    box-shadow: 0 0 0 .25rem rgba(6, 119, 8, 0.25)
 }
 
 .form-select[multiple],
@@ -2488,11 +2488,11 @@ textarea.form-control-lg {
     height: 1em;
     margin-top: .25em;
     vertical-align: top;
-    background-color: #000;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(18, 138, 0, 0.25);
     appearance: none;
     color-adjust: exact
 }
@@ -2510,14 +2510,14 @@ textarea.form-control-lg {
 }
 
 .form-check-input:focus {
-    border-color: #f58b8b;
+    border-color: #49e15d;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(235, 22, 22, 0.25)
+    box-shadow: 0 0 0 .25rem rgba(16, 230, 5, 0.25)
 }
 
 .form-check-input:checked {
-    background-color: #EB1616;
-    border-color: #EB1616
+    background-color: #147900;
+    border-color: #027500
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -2529,8 +2529,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type="checkbox"]:indeterminate {
-    background-color: #EB1616;
-    border-color: #EB1616;
+    background-color: #c9f7c4;
+    border-color: #035b00;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }
 
@@ -3082,22 +3082,22 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #EB1616;
-    border-color: #EB1616
+    background-color: #006f1c;
+    border-color: #046d00
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #c81313;
-    border-color: #bc1212
+    background-color: #004a1f;
+    border-color: #0cae09
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #fff;
-    background-color: #c81313;
-    border-color: #bc1212;
-    box-shadow: 0 0 0 .25rem rgba(238, 57, 57, 0.5)
+    background-color: #00b312;
+    border-color: #056a00;
+    box-shadow: 0 0 0 .25rem rgba(92, 183, 12, 0.5)
 }
 
 .btn-check:checked+.btn-primary,
@@ -3106,8 +3106,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #bc1212;
-    border-color: #b01111
+    background-color: #00a900;
+    border-color: #007d1b
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -8321,7 +8321,7 @@ fieldset:disabled .btn {
 }
 
 .text-white {
-    color: #fff !important
+    color: #003359 !important
 }
 
 .text-body {

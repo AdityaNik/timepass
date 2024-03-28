@@ -30,6 +30,28 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const userTypeSelect = document.getElementById('userTypeSelect');
+            const fileInputDiv = document.getElementById('fileInputDiv');
+
+            // Initially hide the file input div
+            fileInputDiv.style.display = 'none';
+
+            userTypeSelect.addEventListener('change', function () {
+                // Show the file input div only if the selected value is '1' (Vendor)
+                if (this.value === '1') {
+                    fileInputDiv.style.display = '';
+                } else {
+                    fileInputDiv.style.display = 'none';
+                }
+            });
+        });
+
+        function handleClick(e) {
+            window.location.href = 'VenderDashboard.html';
+        }
+    </script>
 </head>
 
 <body>
@@ -49,11 +71,15 @@
             <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                     <div class="bg-secondary rounded p-4 p-sm-5 my-4 mx-3">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <a href="index.html" class="">
-                                <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3>
-                            </a>
-                            <h3>Sign Up</h3>
+                        <div class="d-flex justify-content-center">
+                            <div>
+                                <h3 class="text-primary">
+                                    <img src="./img/abcd.png" width="100" height="100" alt="">
+                                </h3>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center;" class="mb-3">
+                            <h3 class="text-white">Sign Up</h3>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="floatingText" placeholder="jhondoe">
@@ -62,6 +88,17 @@
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="userTypeSelect" aria-label="who you are">
+                                <option selected">Who you are</option>
+                                <option value="1">Vender</option>
+                                <option value="2">Setu</option>
+                            </select>
+                        </div>
+                        <div class="form-floating mb-3" id="fileInputDiv">
+                            <input type="file" class="form-control" id="formFile" placeholder="xyz.pdf">
+                            <label for="floatingInput">Document</label>
                         </div>
                         <div class="form-floating mb-4">
                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
@@ -74,7 +111,8 @@
                             </div>
                             <a href="">Forgot Password</a>
                         </div>
-                        <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
+                        <button type="submit" class="btn btn-primary py-3 w-100 mb-4" onclick="handleClick()">Sign
+                            Up</button>
                         <p class="text-center mb-0">Already have an Account? <a href="">Sign In</a></p>
                     </div>
                 </div>
