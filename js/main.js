@@ -1,3 +1,6 @@
+// hii there
+// this is a full stack cohort
+
 (function ($) {
     "use strict";
 
